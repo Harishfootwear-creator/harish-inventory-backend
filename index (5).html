@@ -1,0 +1,2374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1e3a8a">
+    <meta name="description" content="Harish Footwear - Wholesale distributor of premium footwear brands. Budget Shoe Bazaar with unbeatable wholesale prices.">
+    <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIkhhcmlzaCBGb290d2VhciIsCiAgInNob3J0X25hbWUiOiAiSGFyaXNoIEZXIiwKICAic3RhcnRfdXJsIjogIi4vIiwKICAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwKICAiYmFja2dyb3VuZF9jb2xvciI6ICIjZmFmYWY5IiwKICAidGhlbWVfY29sb3IiOiAiIzFlM2E4YSIsCiAgImRlc2NyaXB0aW9uIjogIldob2xlc2FsZSBGb290d2VhciBEaXN0cmlidXRvciIsCiAgImljb25zIjogWwogICAgewogICAgICAic3JjIjogImRhdGE6aW1hZ2Uvc3ZnK3htbDtiYXNlNjQsUEhOMlp5QjRiV3h1Y3owaWFIUjBjRG92TDNkM2R5NTNNeTV2Y21jdk1qQXdNQzl6ZG1jaUlIWnBaWGRDYjNnOUlqQWdNQ0F4TWpnZ01USTRJajQ4ZEdWNGRDQjRQU0kyTkNJZ2VUMGlOalFpSUdadmJuUXRjMmw2WlQwaU56QWlJRFQ0UEduMGpzOEwzUmxlSFErUEM5emRtYytJZz09IiwKICAgICAgInNpemVzIjogIjE5MngxOTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9zdmcreGxmlIgogICAgfSwKICAgIHsKICAgICAgInNyYyI6ICJkYXRhOmltYWdlL3N2Zyt4bWw7YmFzZTY0LFBITjJaeUI0Yld4dWN3MGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TUM5emRtY2lJSFpwWlhkQ2IzZzlJakFnTUNBeE1qZ2dNVEk0SWo0OGRHVjRkQ0I0UFNJMk5DSWdlVDBpTmpRaUlHWnZiblF0YzJsNlpUMGlOekFpUGpEdm1Memp5c3d2ZEdWNGRENDhMM04yWno0PSIsCiAgICAgICJzaXplcyI6ICI1MTJ4NTEyIiwKICAgICAgInR5cGUiOiAiaW1hZ2Uvc3ZnK3htbCIKICAgIH0KICBdCn0=">
+    <title>Harish Footwear - Wholesale Distributor</title>
+    <style>
+        :root {
+            --color-primary: #1e3a8a;
+            --color-primary-hover: #1e40af;
+            --color-accent: #f97316;
+            --color-accent-hover: #ea580c;
+            --color-background: #fafaf9;
+            --color-surface: #ffffff;
+            --color-text: #111827;
+            --color-text-secondary: #6b7280;
+            --color-border: #e5e7eb;
+            --color-success: #10b981;
+            --color-error: #ef4444;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #fafaf9 0%, #f5f5f4 50%, #e7e5e4 100%);
+            color: var(--color-text);
+            line-height: 1.6;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(30, 58, 138, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(249, 115, 22, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 40% 20%, rgba(20, 184, 166, 0.04) 0%, transparent 50%),
+                radial-gradient(circle at 60% 40%, rgba(99, 102, 241, 0.03) 0%, transparent 50%);
+            animation: bgFloat 20s ease-in-out infinite;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        @keyframes bgFloat {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        body > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--color-text);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover { opacity: 0.8; }
+
+        .admin-btn {
+            background: var(--color-primary);
+            color: white;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .admin-btn:hover { 
+            background: var(--color-primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
+        }
+
+        .admin-badge {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.875rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 1001;
+            /* Initially hidden by default, visibility managed by JS */
+            display: none; 
+            align-items: center;
+            gap: 0.5rem;
+            animation: slideInRight 0.5s ease-out;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .admin-badge:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+
+        .admin-badge.visible {
+            display: flex;
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #f97316 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '👟';
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            font-size: 4rem;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '👞';
+            position: absolute;
+            bottom: 10%;
+            right: 10%;
+            font-size: 4rem;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite 3s;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            animation: fadeIn 1.2s ease-out;
+        }
+
+        .hero-badges {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            animation: fadeIn 1.4s ease-out;
+        }
+
+        .badge {
+            background: rgba(255,255,255,0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            animation: pulse 2s ease-in-out infinite;
+            transition: transform 0.3s;
+        }
+
+        .badge:hover {
+            transform: scale(1.1);
+            background: rgba(255,255,255,0.3);
+        }
+
+        /* Products Section */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            background: transparent;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .product-card {
+            background: white;
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+            cursor: pointer;
+            animation: fadeIn 0.6s ease-out;
+            position: relative;
+        }
+
+        .product-controls {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: none;
+            flex-direction: column;
+            gap: 0.5rem;
+            z-index: 10;
+        }
+
+        .admin-badge.visible ~ .container .product-card .product-controls {
+            display: flex;
+        }
+
+        .product-control-btn {
+            background: var(--color-primary);
+            color: white;
+            border: none;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            transition: all 0.3s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .product-control-btn:hover {
+            background: var(--color-primary-hover);
+            transform: scale(1.1);
+        }
+
+        .product-control-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(30, 58, 138, 0.15);
+            border-color: var(--color-primary);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background: var(--color-surface);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            border-bottom: 1px solid var(--color-border);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-image-emoji {
+            font-size: 3rem;
+        }
+
+        .product-article {
+            font-size: 0.75rem;
+            color: var(--color-text-secondary);
+            margin-top: 0.25rem;
+        }
+
+        .product-description {
+            font-size: 0.875rem;
+            color: var(--color-text-secondary);
+            margin-top: 0.5rem;
+            line-height: 1.4;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .product-brand {
+            font-size: 0.875rem;
+            color: var(--color-text-secondary);
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .product-name {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin: 0.5rem 0;
+        }
+
+        .product-price {
+            font-size: 1.5rem;
+            color: var(--color-primary);
+            font-weight: 700;
+            display: none;
+        }
+
+        .product-stock {
+            font-size: 0.875rem;
+            color: var(--color-success);
+            margin-top: 0.5rem;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: transparent;
+            padding: 3rem 2rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid var(--color-border);
+            transition: all 0.3s;
+            animation: slideIn 0.8s ease-out;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(30, 58, 138, 0.1);
+            border-color: var(--color-primary);
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.02), rgba(249, 115, 22, 0.02));
+        }
+
+        .contact-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Contact Form Section */
+        .contact-form-section {
+            background: transparent;
+            padding: 3rem 2rem;
+        }
+
+        .contact-form-title {
+            font-size: 2rem;
+            text-align: left;
+            margin-bottom: 1rem;
+            color: var(--color-text);
+        }
+
+        .contact-form-subtitle {
+            color: var(--color-text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+            max-width: 800px;
+        }
+
+        .contact-form {
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact-input,
+        .contact-textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+            background: var(--color-surface);
+            transition: border-color 0.3s;
+        }
+
+        .contact-input:focus,
+        .contact-textarea:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        .contact-textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .contact-submit-btn {
+            background: var(--color-accent);
+            color: white;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            align-self: flex-start;
+            transition: all 0.3s;
+        }
+
+        .contact-submit-btn:hover {
+            background: var(--color-accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(249, 115, 22, 0.3);
+        }
+
+        /* Admin Panel Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.active { display: flex; }
+
+        .modal-content {
+            background: white;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 800px;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .modal-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--color-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-body {
+            padding: 2rem;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--color-text-secondary);
+        }
+
+        .close-btn:hover { color: var(--color-text); }
+
+        /* Admin Tabs */
+        .admin-tabs {
+            display: flex;
+            gap: 1rem;
+            border-bottom: 2px solid var(--color-border);
+            margin-bottom: 2rem;
+        }
+
+        .admin-tab {
+            padding: 0.75rem 1.5rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-weight: 500;
+            color: var(--color-text-secondary);
+            border-bottom: 2px solid transparent;
+            margin-bottom: -2px;
+            transition: all 0.3s;
+        }
+
+        .admin-tab.active {
+            color: var(--color-primary);
+            border-bottom-color: var(--color-primary);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Forms */
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 6px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: var(--color-primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--color-primary-hover);
+        }
+
+        .btn-danger {
+            background: var(--color-error);
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #dc2626;
+        }
+
+        /* Product Management Table */
+        .products-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .products-table th,
+        .products-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .products-table th {
+            background: var(--color-surface);
+            font-weight: 600;
+        }
+
+        .products-table tr:hover {
+            background: var(--color-surface);
+        }
+
+        .action-btns {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .btn-sm {
+            padding: 0.4rem 0.8rem;
+            font-size: 0.875rem;
+        }
+
+        /* Login Form */
+        .login-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .alert {
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+
+        .alert-error {
+            background: #fee2e2;
+            color: #991b1b;
+            border: 1px solid #fecaca;
+        }
+
+        .alert-success {
+            background: #d1fae5;
+            color: #065f46;
+            border: 1px solid #a7f3d0;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #f97316 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: footerPulse 4s ease-in-out infinite;
+        }
+
+        @keyframes footerPulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        footer p {
+            position: relative;
+            z-index: 1;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2rem; }
+            .products-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <span id="adminUserId" style="font-size: 0.75rem; opacity: 0.5; display: block; line-height: 1; margin-bottom: -5px;">ID: Loading...</span>
+            👟 Harish Footwear
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1 id="heroTitle">Budget Shoe Bazaar: Wholesale Footwear at Unbeatable Prices ✨</h1>
+        <p id="heroSubtitle">Explore Harish Footwear, the ultimate wholesale distributor for top brands like Nike, Adidas, Puma, and more. Providing quality footwear for all styles, occasions and budgets.</p>
+        <div class="hero-badges">
+            <div class="badge"><span id="badge1Icon">🏆</span> <span id="badge1Text">Top Brands</span></div>
+            <div class="badge"><span id="badge2Icon">💰</span> <span id="badge2Text">Wholesale Prices</span></div>
+            <div class="badge"><span id="badge3Icon">📦</span> <span id="badge3Text">Bulk Orders</span></div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <div class="container" id="products">
+        <h2 class="section-title">Our Premium Collection</h2>
+        <div class="products-grid" id="productsGrid">
+            <!-- Products will be dynamically inserted here -->
+            <p id="loadingProducts" style="text-align: center; color: var(--color-text-secondary);">Loading products...</p>
+        </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <h2 class="contact-form-title" id="contactFormTitle">Contact Harish Footwear</h2>
+            <p class="contact-form-subtitle" id="contactFormSubtitle">Get amazing deals on bulk orders and elevate your footwear collection by connecting with HARISH FOOTWEAR now - Fill the contact form or call -6393191774</p>
+            <form class="contact-form" id="contactForm" onsubmit="handleContactSubmit(event)">
+                <input type="text" class="contact-input" id="contactName" placeholder="First name" required>
+                <input type="email" class="contact-input" id="contactEmail" placeholder="Email" required>
+                <textarea class="contact-textarea" id="contactMessage" placeholder="Message" rows="5" required></textarea>
+                <button type="submit" class="contact-submit-btn">Send</button>
+            </form>
+            <div id="contactAlert" style="margin-top: 1rem;"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-card" onclick="window.location.href='https://maps.app.goo.gl/qikCuAG94XLCAzia8'" style="cursor: pointer;">
+                    <div class="contact-icon">📍</div>
+                    <h3>Location</h3>
+                    <p id="locationText">Bansdih, UP-277202</p>
+                </div>
+                <div class="contact-card" onclick="window.location.href='tel:+916393191774'" style="cursor: pointer;">
+                    <div class="contact-icon">📞</div>
+                    <h3>Phone</h3>
+                    <p id="phoneText">+91 6393191774</p>
+                </div>
+                <div class="contact-card" onclick="window.location.href='mailto:harishfootwear950@gmail.com'" style="cursor: pointer;">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email</h3>
+                    <p id="emailText">harishfootwear950@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Chat Assistant Button -->
+    <button id="aiChatButton" onclick="toggleAiChat()" style="position: fixed; bottom: 20px; right: 20px; width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #3b82f6, #2563eb); color: white; border: none; font-size: 1.5rem; cursor: pointer; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4); z-index: 1000; transition: all 0.3s; display: flex; align-items: center; justify-content: center;">
+        💬
+    </button>
+
+    <!-- AI Chat Widget -->
+    <div id="aiChatWidget" style="display: none; position: fixed; bottom: 90px; right: 20px; width: 350px; max-width: calc(100vw - 40px); background: white; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.2); z-index: 1000; overflow: hidden;">
+        <div style="background: linear-gradient(135deg, #3b82f6, #2563eb); color: white; padding: 1rem; display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <div style="font-weight: 600; font-size: 1.1rem;">Harish Assistant 🤖</div>
+                <div style="font-size: 0.75rem; opacity: 0.9;">Ask me anything!</div>
+            </div>
+            <button onclick="toggleAiChat()" style="background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; padding: 0; width: 30px; height: 30px;">&times;</button>
+        </div>
+        <div id="aiChatMessages" style="height: 300px; overflow-y: auto; padding: 1rem; background: #f9fafb;">
+            <div style="background: linear-gradient(135deg, #e0f2fe, #dbeafe); padding: 0.75rem; border-radius: 12px; margin-bottom: 0.75rem; font-size: 0.875rem;">
+                👋 Hi! I'm your Harish Footwear assistant. I can help you with:<br><br>
+                • Product information<br>
+                • Contact details<br>
+                • Bulk order inquiries<br>
+                • Location and hours<br><br>
+                How can I assist you today?
+            </div>
+        </div>
+        <div style="padding: 1rem; border-top: 1px solid #e5e7eb; background: white;">
+            <form onsubmit="handleAiChat(event)" style="display: flex; gap: 0.5rem;">
+                <input type="text" id="aiChatInput" placeholder="Type your question..." style="flex: 1; padding: 0.75rem; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 0.875rem;" required>
+                <button type="submit" class="contact-submit-btn" style="padding: 0.75rem 1rem;">➤</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p id="footerText1">&copy; 2025 Harish Footwear. All rights reserved.</p>
+        <p id="footerText2">Wholesale Distributor - Nike, Adidas, Puma &amp; More</p>
+        <p id="footerText3" style="margin-top: 0.5rem; font-size: 0.875rem; opacity: 0.8;">🌐 Website Live &amp; Ready for Business</p>
+    </footer>
+
+    <!-- Admin Badge -->
+    <div class="admin-badge" id="adminBadge" onclick="openAdminPanel()">
+        <span>👤</span>
+        <span>Admin Mode</span>
+    </div>
+
+    <!-- Admin Panel Modal -->
+    <div class="modal" id="adminModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Admin Dashboard</h2>
+                <button class="close-btn" onclick="closeAdminPanel()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <!-- Login Section - Hidden/Removed, relying on Canvas Auth -->
+                <div id="loginSection" style="display: none;"></div>
+
+                <!-- Admin Dashboard -->
+                <div id="dashboardSection" style="display: block;">
+                    <div class="admin-tabs">
+                        <button class="admin-tab active" onclick="switchTab('analytics')">Analytics</button>
+                        <button class="admin-tab" onclick="switchTab('products')">Products</button>
+                        <button class="admin-tab" onclick="switchTab('messages')">Messages</button>
+                        <button class="admin-tab" onclick="switchTab('add')">Add Product</button>
+                        <button class="admin-tab" onclick="switchTab('sections')">Add Section</button>
+                        <button class="admin-tab" onclick="switchTab('website')">Website Settings</button>
+                        <button class="admin-tab" onclick="switchTab('assistant')">AI Assistant</button>
+                        <button class="admin-tab" onclick="switchTab('settings')">Account</button>
+                    </div>
+
+                    <!-- Analytics Tab -->
+                    <div id="analyticsTab" class="tab-content active">
+                        <h3>Website Analytics</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+                            <div style="background: linear-gradient(135deg, #3b82f6, #2563eb); color: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);">
+                                <div style="font-size: 0.875rem; opacity: 0.9; margin-bottom: 0.5rem;">Total Visitors</div>
+                                <div style="font-size: 2rem; font-weight: 700;" id="totalVisitors">0</div>
+                                <div style="font-size: 0.75rem; opacity: 0.8; margin-top: 0.5rem;">All time</div>
+                            </div>
+                            <div style="background: linear-gradient(135deg, #10b981, #059669); color: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);">
+                                <div style="font-size: 0.875rem; opacity: 0.9; margin-bottom: 0.5rem;">Today's Visitors</div>
+                                <div style="font-size: 2rem; font-weight: 700;" id="todayVisitors">0</div>
+                                <div style="font-size: 0.75rem; opacity: 0.8; margin-top: 0.5rem;" id="todayDate">Nov 07</div>
+                            </div>
+                            <div style="background: linear-gradient(135deg, #f97316, #ea580c); color: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(249, 115, 22, 0.2);">
+                                <div style="font-size: 0.875rem; opacity: 0.9; margin-bottom: 0.5rem;">Page Views</div>
+                                <div style="font-size: 2rem; font-weight: 700;" id="totalViews">0</div>
+                                <div style="font-size: 0.75rem; opacity: 0.8; margin-top: 0.5rem;">Total</div>
+                            </div>
+                            <div style="background: linear-gradient(135deg, #8b5cf6, #7c3aed); color: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(139, 92, 246, 0.2);">
+                                <div style="font-size: 0.875rem; opacity: 0.9; margin-bottom: 0.5rem;">Avg. Time</div>
+                                <div style="font-size: 2rem; font-weight: 700;" id="avgTime">0:00</div>
+                                <div style="font-size: 0.75rem; opacity: 0.8; margin-top: 0.5rem;">Minutes</div>
+                            </div>
+                        </div>
+
+                        <div style="background: white; padding: 1.5rem; border-radius: 12px; border: 1px solid var(--color-border); margin-top: 2rem;">
+                            <h4 style="margin-bottom: 1rem;">Recent Activity</h4>
+                            <table class="products-table">
+                                <thead>
+                                    <tr>
+                                        <th>Date & Time</th>
+                                        <th>Type</th>
+                                        <th>Details</th>
+                                    </tr>
+                                </thead>
+                            <tbody id="activityLog">
+                                    <tr>
+                                        <td colspan="3" style="text-align: center; color: var(--color-text-secondary); padding: 2rem;">No activity yet</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div style="background: white; padding: 1.5rem; border-radius: 12px; border: 1px solid var(--color-border); margin-top: 2rem;">
+                            <h4 style="margin-bottom: 1rem;">Visitor Statistics</h4>
+                            <div style="display: grid; gap: 1rem;">
+                                <div style="display: flex; justify-content: space-between; padding: 0.75rem; background: var(--color-surface); border-radius: 6px;">
+                                    <span>Desktop Visitors</span>
+                                    <span style="font-weight: 600;" id="desktopCount">0 (0%)</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; padding: 0.75rem; background: var(--color-surface); border-radius: 6px;">
+                                    <span>Mobile Visitors</span>
+                                    <span style="font-weight: 600;" id="mobileCount">0 (0%)</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; padding: 0.75rem; background: var(--color-surface); border-radius: 6px;">
+                                    <span>Tablet Visitors</span>
+                                    <span style="font-weight: 600;" id="tabletCount">0 (0%)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 1.5rem; padding: 1rem; background: #fef3c7; border: 1px solid #fbbf24; border-radius: 8px;">
+                            <strong style="color: #92400e;">📊 Note:</strong>
+                            <p style="margin: 0.5rem 0 0 0; color: #92400e; font-size: 0.875rem;">Analytics tracking starts from your first visitor after this update. Data is stored locally in the visitor's browser.</p>
+                        </div>
+                    </div>
+
+                    <!-- Products Tab -->
+                    <div id="productsTab" class="tab-content">
+                        <h3>Manage Products</h3>
+                        <table class="products-table">
+                            <thead>
+                                <tr>
+                                    <th>Position</th>
+                                    <th>Brand</th>
+                                    <th>Name</th>
+                                    <th>Stock</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="adminProductsList">
+                                <tr>
+                                    <td colspan="5" style="text-align: center; color: var(--color-text-secondary); padding: 2rem;">Loading products from Firestore...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Messages Tab -->
+                    <div id="messagesTab" class="tab-content">
+                        <h3>Customer Messages</h3>
+                        <div id="messagesList">
+                            <p style="color: var(--color-text-secondary);">Loading messages...</p>
+                        </div>
+                    </div>
+
+                    <!-- Add Product Tab -->
+                    <div id="addTab" class="tab-content">
+                        <h3>Add New Product</h3>
+                        <form onsubmit="handleAddProduct(event)">
+                            <div class="form-group">
+                                <label for="productBrand">Brand</label>
+                                <select id="productBrand" class="form-control" required onchange="handleBrandSelect()">
+                                    <option value="Nike">Nike</option>
+                                    <option value="Adidas">Adidas</option>
+                                    <option value="Puma">Puma</option>
+                                    <option value="Reebok">Reebok</option>
+                                    <option value="__custom__">+ Add Custom Brand</option>
+                                </select>
+                            </div>
+                            <div class="form-group" id="customBrandGroup" style="display: none;">
+                                <label for="customBrandInput">Custom Brand Name</label>
+                                <input type="text" id="customBrandInput" class="form-control" placeholder="Enter brand name">
+                            </div>
+                            <div class="form-group">
+                                <label for="productName">Product Name</label>
+                                <input type="text" id="productName" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="productPrice">Wholesale Price (₹)</label>
+                                <input type="number" id="productPrice" class="form-control" value="0" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="productImage">Image URL (Optional)</label>
+                                <input type="url" id="productImage" class="form-control" placeholder="https://example.com/image.jpg">
+                            </div>
+                            <div class="form-group">
+                                <label for="productArticle">Article Number (Optional)</label>
+                                <input type="text" id="productArticle" class="form-control" placeholder="e.g., NK-AM270-001">
+                            </div>
+                            <div class="form-group">
+                                <label for="productDescription">Description (Optional)</label>
+                                <textarea id="productDescription" class="form-control" rows="3" placeholder="Product description..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="productStock">Stock Quantity</label>
+                                <input type="number" id="productStock" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="productEmoji">Emoji</label>
+                                <input type="text" id="productEmoji" class="form-control" placeholder="👟" maxlength="2" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Add Product</button>
+                        </form>
+                    </div>
+
+                    <!-- Website Settings Tab -->
+                    <div id="websiteTab" class="tab-content">
+                        <h3>Website Content Settings</h3>
+                        <p style="color: var(--color-text-secondary); margin-bottom: 1rem;">Click on any field to edit individual content without changing everything.</p>
+                        <form onsubmit="handleWebsiteSettings(event)">
+                            <div class="form-group">
+                                <label for="siteTitle">Hero Title</label>
+                                <input type="text" id="siteTitle" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="siteSubtitle">Hero Subtitle</label>
+                                <textarea id="siteSubtitle" class="form-control" rows="2" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="badge1">Badge 1 Text</label>
+                                <input type="text" id="badge1" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="badge1Icon">Badge 1 Icon</label>
+                                <input type="text" id="badge1Icon" class="form-control" maxlength="2" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="badge2">Badge 2 Text</label>
+                                <input type="text" id="badge2" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="badge2Icon">Badge 2 Icon</label>
+                                <input type="text" id="badge2Icon" class="form-control" maxlength="2" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="badge3">Badge 3 Text</label>
+                                <input type="text" id="badge3" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="badge3Icon">Badge 3 Icon</label>
+                                <input type="text" id="badge3Icon" class="form-control" maxlength="2" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactFormTitle">Contact Form Title</label>
+                                <input type="text" id="contactFormTitle" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactFormSubtitle">Contact Form Subtitle</label>
+                                <textarea id="contactFormSubtitle" class="form-control" rows="2" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="locationText">Location</label>
+                                <input type="text" id="locationText" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phoneText">Phone Number</label>
+                                <input type="text" id="phoneText" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="emailText">Email Address</label>
+                                <input type="email" id="emailText" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="footerText1">Footer Text Line 1</label>
+                                <input type="text" id="footerText1" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="footerText2">Footer Text Line 2</label>
+                                <input type="text" id="footerText2" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="footerText3">Footer Text Line 3</label>
+                                <input type="text" id="footerText3" class="form-control" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Save All Changes</button>
+                            <button type="button" class="btn btn-secondary" onclick="resetWebsiteSettings()" style="margin-left: 0.5rem; background: var(--color-text-secondary);">Reset to Current</button>
+                        </form>
+                        
+                        <hr style="margin: 2rem 0;">
+                        <h4>Quick Edit Individual Fields</h4>
+                        <p style="color: var(--color-text-secondary); margin-bottom: 1rem;">Update single fields instantly without affecting other content.</p>
+                        <div style="display: grid; gap: 1rem;">
+                            <button class="btn btn-secondary" onclick="quickEditField('heroTitle', 'Hero Title')" style="background: var(--color-accent); color: white; text-align: left;">✏️ Edit Hero Title</button>
+                            <button class="btn btn-secondary" onclick="quickEditField('heroSubtitle', 'Hero Subtitle')" style="background: var(--color-accent); color: white; text-align: left;">✏️ Edit Hero Subtitle</button>
+                            <button class="btn btn-secondary" onclick="quickEditField('badge1Text', 'Badge 1 Text')" style="background: var(--color-accent); color: white; text-align: left;">✏️ Edit Badge 1</button>
+                            <button class="btn btn-secondary" onclick="quickEditField('badge2Text', 'Badge 2 Text')" style="background: var(--color-accent); color: white; text-align: left;">✏️ Edit Badge 2</button>
+                            <button class="btn btn-secondary" onclick="quickEditField('badge3Text', 'Badge 3 Text')" style="background: var(--color-accent); color: white; text-align: left;">✏️ Edit Badge 3</button>
+                            <button class="btn btn-secondary" onclick="quickEditField('contactFormTitle', 'Contact Form Title')" style="background: var(--color-accent); color: white; text-align: left;">✏️ Edit Contact Title</button>
+                            <button class="btn btn-secondary" onclick="quickEditField('locationText', 'Location')" style="background: var(--color-accent); color: white; text-align: left;">✏️ Edit Location</button>
+                            <button class="btn btn-secondary" onclick="quickEditField('phoneText', 'Phone Number')" style="background: var(--color-accent); color: white; text-align: left;">✏️ Edit Phone</button>
+                            <button class="btn btn-secondary" onclick="quickEditField('emailText', 'Email Address')" style="background: var(--color-accent); color: white; text-align: left;">✏️ Edit Email</button>
+                        </div>
+                    </div>
+
+                    <!-- Add Section Tab -->
+                    <div id="sectionsTab" class="tab-content">
+                        <h3>Manage Sections</h3>
+                        <p style="color: var(--color-text-secondary); margin-bottom: 1.5rem;">Add hero banners, cards, text blocks, and more to your website.</p>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <h4 style="margin-bottom: 1rem;">Add New Section</h4>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+                                <button class="btn btn-primary" onclick="addSection('hero')" style="padding: 1rem; display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+                                    <span style="font-size: 2rem;">🎯</span>
+                                    <span>Hero Banner</span>
+                                </button>
+                                <button class="btn btn-primary" onclick="addSection('card')" style="padding: 1rem; display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+                                    <span style="font-size: 2rem;">🃏</span>
+                                    <span>Card</span>
+                                </button>
+                                <button class="btn btn-primary" onclick="addSection('text')" style="padding: 1rem; display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+                                    <span style="font-size: 2rem;">📝</span>
+                                    <span>Text Block</span>
+                                </button>
+                                <button class="btn btn-primary" onclick="addSection('image')" style="padding: 1rem; display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+                                    <span style="font-size: 2rem;">🖼️</span>
+                                    <span>Image</span>
+                                </button>
+                                <button class="btn btn-primary" onclick="addSection('gallery')" style="padding: 1rem; display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+                                    <span style="font-size: 2rem;">🎨</span>
+                                    <span>Gallery</span>
+                                </button>
+                                <button class="btn btn-primary" onclick="addSection('spacer')" style="padding: 1rem; display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+                                    <span style="font-size: 2rem;">⬜</span>
+                                    <span>Spacer</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <hr style="margin: 2rem 0;">
+
+                        <h4 style="margin-bottom: 1rem;">Current Sections</h4>
+                        <div id="sectionsList">
+                            <p style="color: var(--color-text-secondary);">Loading sections...</p>
+                        </div>
+                    </div>
+
+                    <!-- AI Assistant Tab -->
+                    <div id="assistantTab" class="tab-content">
+                        <h3>AI Chat Assistant Settings</h3>
+                        <p style="color: var(--color-text-secondary); margin-bottom: 1.5rem;">Manage your AI chat assistant settings and customize responses.</p>
+                        
+                        <div class="form-group">
+                            <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                <input type="checkbox" id="assistantEnabled" onchange="toggleAssistant()" checked style="width: auto; cursor: pointer;">
+                                <span style="font-weight: 500;">Enable AI Chat Assistant</span>
+                            </label>
+                            <p style="color: var(--color-text-secondary); font-size: 0.875rem; margin-top: 0.5rem;">Toggle the chat widget on/off for website visitors</p>
+                        </div>
+
+                        <hr style="margin: 2rem 0;">
+
+                        <div class="form-group">
+                            <label for="assistantGreeting">Welcome Message</label>
+                            <textarea id="assistantGreeting" class="form-control" rows="4" placeholder="Enter welcome message...">👋 Hi! I'm your Harish Footwear assistant. I can help you with:
+
+• Product information
+• Contact details
+• Bulk order inquiries
+• Location and hours
+
+How can I assist you today?</textarea>
+                            <p style="color: var(--color-text-secondary); font-size: 0.875rem; margin-top: 0.5rem;">This message appears when visitors open the chat</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="assistantTitle">Assistant Name</label>
+                            <input type="text" id="assistantTitle" class="form-control" value="Harish Assistant 🤖">
+                            <p style="color: var(--color-text-secondary); font-size: 0.875rem; margin-top: 0.5rem;">The name displayed in the chat header</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="assistantSubtitle">Assistant Subtitle</label>
+                            <input type="text" id="assistantSubtitle" class="form-control" value="Ask me anything!">
+                            <p style="color: var(--color-text-secondary); font-size: 0.875rem; margin-top: 0.5rem;">Subtitle text under the assistant name</p>
+                        </div>
+
+                        <button type="button" class="btn btn-primary" onclick="saveAssistantSettings()">Save Assistant Settings</button>
+                        <button type="button" class="btn btn-secondary" onclick="resetAssistantSettings()" style="margin-left: 0.5rem; background: var(--color-text-secondary);">Reset to Defaults</button>
+
+                        <hr style="margin: 2rem 0;">
+
+                        <div style="background: #fef3c7; padding: 1rem; border-radius: 8px; border: 1px solid #fbbf24;">
+                            <strong style="color: #92400e;">💡 Assistant Features:</strong>
+                            <ul style="margin: 0.5rem 0 0 1.5rem; color: #92400e; font-size: 0.875rem;">
+                                <li>Answers questions about products, contact info, location</li>
+                                <li>Provides bulk order information</li>
+                                <li>Helps visitors navigate your website</li>
+                                <li>Available 24/7 for instant responses</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Settings Tab -->
+                    <div id="settingsTab" class="tab-content">
+                        <h3>Account Settings</h3>
+                        <p style="color: var(--color-text-secondary); margin-bottom: 1.5rem;">You are securely authenticated via the Canvas environment.</p>
+                        <div style="padding: 1rem; background: #fef3c7; border: 1px solid #fbbf24; border-radius: 8px;">
+                            <strong style="color: #92400e;">Your User ID:</strong>
+                            <p id="authUserIdDisplay" style="margin: 0.5rem 0 0 0; color: var(--color-text); font-size: 0.875rem; word-break: break-all;">Loading...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, doc, getDoc, addDoc, setDoc, updateDoc, deleteDoc, onSnapshot, collection, query, where, getDocs, deleteField } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+        import { setLogLevel } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+        
+        // Set Firestore debug level
+        setLogLevel('Debug');
+
+        // --- PRODUCTION FIREBASE CONFIGURATION START ---
+        // !!! IMPORTANT !!! REPLACE THE PLACEHOLDERS BELOW with your actual Firebase Project Configuration.
+        const APP_ID = 'your-hardcoded-app-id-from-canvas-or-new-uuid'; // Example: 'default-harish-app-id' (or the ID displayed in your logo header)
+        const FIREBASE_CONFIG = {
+            // Replace with your actual Firebase project settings
+            apiKey: "YOUR_API_KEY", 
+            authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_PROJECT_ID.appspot.com",
+            messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+            appId: "YOUR_APP_ID" // This should match the configuration in your Firebase console
+        };
+        
+        // Since we cannot use the Canvas auth token, we default to anonymous sign-in
+        const initialAuthToken = null;
+        // --- PRODUCTION FIREBASE CONFIGURATION END ---
+
+        let app, db, auth;
+        let userId = null;
+        let isAuthReady = false;
+        let products = [];
+        let messages = [];
+        let customSections = [];
+        let websiteContent = {};
+        
+        // Default content for initialization if Firestore doc is empty
+        const defaultWebsiteContent = {
+            heroTitle: 'Budget Shoe Bazaar: Wholesale Footwear at Unbeatable Prices ✨',
+            heroSubtitle: 'Explore Harish Footwear, the ultimate wholesale distributor for top brands like Nike, Adidas, Puma, and more. Providing quality footwear for all styles, occasions and budgets.',
+            badge1Text: 'Top Brands',
+            badge1Icon: '🏆',
+            badge2Text: 'Wholesale Prices',
+            badge2Icon: '💰',
+            badge3Text: 'Bulk Orders',
+            badge3Icon: '📦',
+            contactFormTitle: 'Contact Harish Footwear',
+            contactFormSubtitle: 'Get amazing deals on bulk orders and elevate your footwear collection by connecting with HARISH FOOTWEAR now - Fill the contact form or call -6393191774',
+            locationText: 'Bansdih, UP-277202',
+            phoneText: '+91 6393191774',
+            emailText: 'harishfootwear950@gmail.com',
+            footerText1: '© 2025 Harish Footwear. All rights reserved.',
+            footerText2: 'Wholesale Distributor - Nike, Adidas, Puma & More',
+            footerText3: '🌐 Website Live & Ready for Business'
+        };
+        
+        // AI Assistant settings (kept in localStorage as it's configuration, not transactional data)
+        let assistantSettings = {
+            enabled: true,
+            greeting: '👋 Hi! I\'m your Harish Footwear assistant. I can help you with:\n\n• Product information\n• Contact details\n• Bulk order inquiries\n• Location and hours\n\nHow can I assist you today?',
+            title: 'Harish Assistant 🤖',
+            subtitle: 'Ask me anything!'
+        };
+
+        // --- FIREBASE INITIALIZATION AND AUTHENTICATION ---
+        function initFirebase() {
+            // NOTE: Using FIREBASE_CONFIG instead of __firebase_config
+            if (!FIREBASE_CONFIG.projectId || FIREBASE_CONFIG.projectId === "YOUR_PROJECT_ID") {
+                console.error("Firebase config is missing or using placeholders! Update FIREBASE_CONFIG before deploying.");
+                // We'll proceed with minimal functionality but warn the user.
+            }
+
+            try {
+                app = initializeApp(FIREBASE_CONFIG);
+                db = getFirestore(app);
+                auth = getAuth(app);
+                
+                // Use onAuthStateChanged for robust authentication handling
+                onAuthStateChanged(auth, async (user) => {
+                    if (user) {
+                        userId = user.uid;
+                        document.getElementById('adminUserId').textContent = `ID: ${userId}`;
+                        document.getElementById('authUserIdDisplay').textContent = userId;
+                        isAuthReady = true;
+                        console.log("Firebase Auth Ready. User ID:", userId);
+                        
+                        // Start loading real-time data after authentication
+                        setupRealtimeListeners();
+                        
+                    } else {
+                        // In the deployed environment, we sign in anonymously for access
+                        await signInAnonymously(auth).catch(error => {
+                            console.error("Anonymous sign-in failed:", error);
+                        });
+                    }
+                });
+            } catch (e) {
+                console.error("Firebase initialization failed:", e);
+            }
+        }
+
+        // --- FIRESTORE UTILITIES ---
+        function getUserDocRef(docName) {
+            if (!userId) return null;
+            // NOTE: Using APP_ID instead of __app_id
+            return doc(db, 'artifacts', APP_ID, 'users', userId, docName, docName);
+        }
+
+        function getUserCollectionRef(collectionName) {
+            if (!userId) return null;
+            // NOTE: Using APP_ID instead of __app_id
+            return collection(db, 'artifacts', APP_ID, 'users', userId, collectionName);
+        }
+        
+        // Get the specific document reference for WebsiteContent (a single document)
+        function getWebsiteContentDocRef() {
+            return getUserDocRef('websiteContent');
+        }
+
+        // --- REAL-TIME DATA LISTENERS ---
+        function setupRealtimeListeners() {
+            if (!isAuthReady) return;
+
+            // 1. Listen for Product changes (Collection)
+            const productsColRef = getUserCollectionRef('products');
+            onSnapshot(productsColRef, (snapshot) => {
+                products = snapshot.docs.map(d => ({ id: d.id, ...d.data() }));
+                // Sort by position (position is set/updated in the admin move functions)
+                products.sort((a, b) => a.position - b.position); 
+                renderProducts();
+                renderAdminProducts();
+            }, (error) => {
+                console.error("Error listening to products:", error);
+                document.getElementById('loadingProducts').textContent = "Failed to load products.";
+            });
+
+            // 2. Listen for Message changes (Collection)
+            const messagesColRef = getUserCollectionRef('messages');
+            onSnapshot(messagesColRef, (snapshot) => {
+                messages = snapshot.docs.map(d => ({ id: d.id, ...d.data() }));
+                // Sort by timestamp (newest first)
+                messages.sort((a, b) => b.timestamp.seconds - a.timestamp.seconds);
+                renderMessages();
+            }, (error) => {
+                console.error("Error listening to messages:", error);
+            });
+
+            // 3. Listen for Website Content changes (Single Document)
+            const contentDocRef = getWebsiteContentDocRef();
+            onSnapshot(contentDocRef, (docSnapshot) => {
+                if (docSnapshot.exists()) {
+                    websiteContent = { ...defaultWebsiteContent, ...docSnapshot.data() };
+                } else {
+                    // Initialize with default content if the document doesn't exist
+                    console.log("Website content document not found, initializing defaults.");
+                    websiteContent = defaultWebsiteContent;
+                    setDoc(contentDocRef, defaultWebsiteContent).catch(e => console.error("Error setting default content:", e));
+                }
+                updatePageContent();
+                updateContactLinks();
+            }, (error) => {
+                console.error("Error listening to website content:", error);
+            });
+
+            // 4. Listen for Custom Sections changes (Collection)
+            const sectionsColRef = getUserCollectionRef('customSections');
+            onSnapshot(sectionsColRef, (snapshot) => {
+                customSections = snapshot.docs.map(d => ({ id: d.id, ...d.data() }));
+                customSections.sort((a, b) => a.position - b.position);
+                renderSections();
+                renderSectionsList();
+            }, (error) => {
+                console.error("Error listening to sections:", error);
+            });
+        }
+        
+        // --- DATA INTERACTION FUNCTIONS (Firestore CRUD) ---
+
+        // ADMIN: ADD PRODUCT
+        async function handleAddProduct(e) {
+            e.preventDefault();
+            if (!isAuthReady) return alert('Authentication not ready. Please wait.');
+
+            let brandValue = document.getElementById('productBrand').value;
+            if (brandValue === '__custom__') {
+                brandValue = document.getElementById('customBrandInput').value.trim();
+                if (!brandValue) {
+                    alert('Please enter a custom brand name!');
+                    return;
+                }
+            }
+            
+            // Determine the next position based on current product list
+            const maxPosition = products.length > 0 ? Math.max(...products.map(p => p.position || 0)) : 0;
+
+            const newProduct = {
+                brand: brandValue,
+                name: document.getElementById('productName').value,
+                price: parseInt(document.getElementById('productPrice').value) || 0,
+                stock: parseInt(document.getElementById('productStock').value),
+                emoji: document.getElementById('productEmoji').value || '👟',
+                image: document.getElementById('productImage').value,
+                article: document.getElementById('productArticle').value,
+                description: document.getElementById('productDescription').value,
+                position: maxPosition + 1, // Set position to put it at the end
+            };
+
+            try {
+                const productsColRef = getUserCollectionRef('products');
+                await addDoc(productsColRef, newProduct);
+                
+                // Reset form
+                e.target.reset();
+                document.getElementById('customBrandGroup').style.display = 'none';
+                alert('Product added successfully!');
+                
+                // Switch to products tab to see the result
+                document.querySelector('.admin-tab[onclick*="products"]').click();
+            } catch (error) {
+                console.error("Error adding product: ", error);
+                alert('Failed to add product.');
+            }
+        }
+        
+        // ADMIN: UPDATE PRODUCT
+        async function updateProductField(id, field, value) {
+            if (!isAuthReady) return alert('Authentication not ready. Please wait.');
+            try {
+                const docRef = doc(getUserCollectionRef('products'), id);
+                await updateDoc(docRef, { [field]: value });
+            } catch (error) {
+                console.error(`Error updating product ${field}:`, error);
+                alert('Failed to update product.');
+            }
+        }
+
+        // ADMIN: DELETE PRODUCT
+        async function deleteProduct(id) {
+            if (!isAuthReady) return alert('Authentication not ready. Please wait.');
+            if (!confirm('Are you sure you want to delete this product?')) return;
+            
+            try {
+                const docRef = doc(getUserCollectionRef('products'), id);
+                await deleteDoc(docRef);
+                alert('Product deleted successfully!');
+            } catch (error) {
+                console.error("Error deleting product: ", error);
+                alert('Failed to delete product.');
+            }
+        }
+        
+        // ADMIN: MOVE PRODUCT (Handles position update)
+        async function moveProduct(productId, direction) {
+            if (!isAuthReady) return alert('Authentication not ready. Please wait.');
+
+            const index = products.findIndex(p => p.id === productId);
+            if (index === -1) return;
+
+            const currentProduct = products[index];
+            let targetProduct;
+            // Note: The move logic relies on the real-time listener to sort and re-render.
+            // We just need to swap the position fields in Firestore.
+
+            try {
+                if (direction === 'up' && index > 0) {
+                    targetProduct = products[index - 1];
+                    // Swap positions
+                    await updateDoc(doc(getUserCollectionRef('products'), currentProduct.id), { position: targetProduct.position });
+                    await updateDoc(doc(getUserCollectionRef('products'), targetProduct.id), { position: currentProduct.position });
+                } else if (direction === 'down' && index < products.length - 1) {
+                    targetProduct = products[index + 1];
+                    // Swap positions
+                    await updateDoc(doc(getUserCollectionRef('products'), currentProduct.id), { position: targetProduct.position });
+                    await updateDoc(doc(getUserCollectionRef('products'), targetProduct.id), { position: currentProduct.position });
+                }
+                // Real-time listener handles UI update
+            } catch (error) {
+                console.error(`Error moving product ${direction}:`, error);
+                alert('Failed to move product.');
+            }
+        }
+        
+        // CUSTOMER: CONTACT FORM SUBMISSION
+        async function handleContactSubmit(e) {
+            e.preventDefault();
+            
+            const form = e.target;
+            const name = document.getElementById('contactName').value;
+            const email = document.getElementById('contactEmail').value;
+            const message = document.getElementById('contactMessage').value;
+            const alertDiv = document.getElementById('contactAlert');
+            
+            if (!isAuthReady) {
+                alertDiv.innerHTML = '<div class="alert alert-error">System is loading. Please try again in a moment.</div>';
+                return;
+            }
+
+            try {
+                const messagesColRef = getUserCollectionRef('messages');
+                await addDoc(messagesColRef, {
+                    name,
+                    email,
+                    message,
+                    timestamp: new Date(), // Firestore Timestamp
+                });
+                
+                alertDiv.innerHTML = '<div class="alert alert-success">Thank you for your message! We will get back to you soon.</div>';
+                form.reset();
+            } catch (error) {
+                console.error("Error adding document: ", error);
+                alertDiv.innerHTML = '<div class="alert alert-error">Failed to send message. Please try again.</div>';
+            }
+            
+            setTimeout(() => { alertDiv.innerHTML = ''; }, 5000);
+        }
+
+        // ADMIN: DELETE MESSAGE
+        async function deleteMessage(id) {
+            if (!isAuthReady) return alert('Authentication not ready. Please wait.');
+            if (!confirm('Are you sure you want to delete this message?')) return;
+            
+            try {
+                const docRef = doc(getUserCollectionRef('messages'), id);
+                await deleteDoc(docRef);
+                alert('Message deleted successfully!');
+            } catch (error) {
+                console.error("Error deleting message: ", error);
+                alert('Failed to delete message.');
+            }
+        }
+        
+        // ADMIN: SAVE WEBSITE CONTENT (SINGLE DOCUMENT)
+        async function handleWebsiteSettings(e) {
+            e.preventDefault();
+            if (!isAuthReady) return alert('Authentication not ready. Please wait.');
+            
+            const newContent = {
+                heroTitle: document.getElementById('siteTitle').value,
+                heroSubtitle: document.getElementById('siteSubtitle').value,
+                badge1Text: document.getElementById('badge1').value,
+                badge1Icon: document.getElementById('badge1Icon').value,
+                badge2Text: document.getElementById('badge2').value,
+                badge2Icon: document.getElementById('badge2Icon').value,
+                badge3Text: document.getElementById('badge3').value,
+                badge3Icon: document.getElementById('badge3Icon').value,
+                contactFormTitle: document.getElementById('contactFormTitle').value,
+                contactFormSubtitle: document.getElementById('contactFormSubtitle').value,
+                locationText: document.getElementById('locationText').value,
+                phoneText: document.getElementById('phoneText').value,
+                emailText: document.getElementById('emailText').value,
+                footerText1: document.getElementById('footerText1').value,
+                footerText2: document.getElementById('footerText2').value,
+                footerText3: document.getElementById('footerText3').value,
+            };
+
+            try {
+                await setDoc(getWebsiteContentDocRef(), newContent);
+                alert('Website settings updated successfully! Changes are now live on the main page.');
+            } catch (error) {
+                console.error("Error updating website content:", error);
+                alert('Failed to save website settings.');
+            }
+        }
+
+        // ADMIN: QUICK EDIT INDIVIDUAL FIELD
+        function quickEditField(fieldId, fieldName) {
+            const currentValue = websiteContent[fieldId];
+            const newValue = prompt(`Edit ${fieldName}:`, currentValue);
+            
+            if (newValue !== null && newValue.trim() !== '' && newValue !== currentValue) {
+                if (!isAuthReady) return alert('Authentication not ready. Please wait.');
+                
+                const update = { [fieldId]: newValue.trim() };
+                
+                updateDoc(getWebsiteContentDocRef(), update)
+                    .then(() => {
+                        alert(`${fieldName} updated successfully! Changes are live.`);
+                        // The onSnapshot listener will handle UI update
+                    })
+                    .catch(error => {
+                        console.error(`Error updating ${fieldName}:`, error);
+                        alert(`Failed to update ${fieldName}.`);
+                    });
+            }
+        }
+        
+        // ADMIN: ADD SECTION
+        async function addSection(type) {
+            if (!isAuthReady) return alert('Authentication not ready. Please wait.');
+
+            const maxPosition = customSections.length > 0 ? Math.max(...customSections.map(s => s.position || 0)) : 0;
+            const newSection = { type: type, position: maxPosition + 1 };
+            
+            if (type === 'hero') {
+                const title = prompt('Enter hero banner title:');
+                const subtitle = prompt('Enter hero banner subtitle:');
+                if (title) {
+                    newSection.content = { title, subtitle: subtitle || '' };
+                } else return;
+            } else if (type === 'card') {
+                const title = prompt('Enter card title:');
+                const text = prompt('Enter card text:');
+                if (title) {
+                    newSection.content = { title, text: text || '' };
+                } else return;
+            } else if (type === 'text') {
+                const text = prompt('Enter text content:');
+                if (text) {
+                    newSection.content = { text };
+                } else return;
+            } else if (type === 'image') {
+                const url = prompt('Enter image URL:');
+                const caption = prompt('Enter image caption (optional):');
+                if (url) {
+                    newSection.content = { url, caption: caption || '' };
+                } else return;
+            } else if (type === 'gallery') {
+                const urls = prompt('Enter image URLs (comma-separated):');
+                if (urls) {
+                    newSection.content = { images: urls.split(',').map(u => u.trim()) };
+                } else return;
+            } else if (type === 'spacer') {
+                newSection.content = { height: '50px' };
+            }
+            
+            try {
+                await addDoc(getUserCollectionRef('customSections'), newSection);
+                alert('Section added successfully!');
+            } catch (error) {
+                console.error("Error adding section: ", error);
+                alert('Failed to add section.');
+            }
+        }
+
+        // ADMIN: EDIT SECTION
+        async function editSection(id) {
+            if (!isAuthReady) return alert('Authentication not ready. Please wait.');
+            
+            const section = customSections.find(s => s.id === id);
+            if (!section) return;
+            
+            let updatedContent = { ...section.content };
+            
+            if (section.type === 'hero') {
+                const title = prompt('Edit hero title:', section.content.title);
+                const subtitle = prompt('Edit hero subtitle:', section.content.subtitle);
+                if (title !== null) updatedContent.title = title;
+                if (subtitle !== null) updatedContent.subtitle = subtitle;
+            } else if (section.type === 'card') {
+                const title = prompt('Edit card title:', section.content.title);
+                const text = prompt('Edit card text:', section.content.text);
+                if (title !== null) updatedContent.title = title;
+                if (text !== null) updatedContent.text = text;
+            } else if (section.type === 'text') {
+                const text = prompt('Edit text:', section.content.text);
+                if (text !== null) updatedContent.text = text;
+            } else if (section.type === 'image') {
+                const url = prompt('Edit image URL:', section.content.url);
+                const caption = prompt('Edit caption:', section.content.caption);
+                if (url !== null) updatedContent.url = url;
+                if (caption !== null) updatedContent.caption = caption;
+            } else if (section.type === 'spacer') {
+                 const height = prompt('Edit spacer height (e.g., 100px):', section.content.height);
+                 if (height !== null) updatedContent.height = height;
+            } else if (section.type === 'gallery') {
+                 const urls = prompt('Edit image URLs (comma-separated):', section.content.images.join(', '));
+                 if (urls !== null) updatedContent.images = urls.split(',').map(u => u.trim());
+            }
+            
+            try {
+                const docRef = doc(getUserCollectionRef('customSections'), id);
+                await updateDoc(docRef, { content: updatedContent });
+            } catch (error) {
+                console.error("Error editing section: ", error);
+                alert('Failed to edit section.');
+            }
+        }
+
+        // ADMIN: DELETE SECTION
+        async function deleteSection(id) {
+            if (!isAuthReady) return alert('Authentication not ready. Please wait.');
+            if (!confirm('Delete this section?')) return;
+            
+            try {
+                const docRef = doc(getUserCollectionRef('customSections'), id);
+                await deleteDoc(docRef);
+                alert('Section deleted successfully!');
+            } catch (error) {
+                console.error("Error deleting section: ", error);
+                alert('Failed to delete section.');
+            }
+        }
+
+        // ADMIN: MOVE SECTION (Handles position update)
+        async function moveSection(id, direction) {
+            if (!isAuthReady) return alert('Authentication not ready. Please wait.');
+
+            const index = customSections.findIndex(s => s.id === id);
+            if (index === -1) return;
+
+            const currentSection = customSections[index];
+            let targetSection;
+
+            try {
+                if (direction === 'up' && index > 0) {
+                    targetSection = customSections[index - 1];
+                    // Swap positions
+                    await updateDoc(doc(getUserCollectionRef('customSections'), currentSection.id), { position: targetSection.position });
+                    await updateDoc(doc(getUserCollectionRef('customSections'), targetSection.id), { position: currentSection.position });
+                } else if (direction === 'down' && index < customSections.length - 1) {
+                    targetSection = customSections[index + 1];
+                    // Swap positions
+                    await updateDoc(doc(getUserCollectionRef('customSections'), currentSection.id), { position: targetSection.position });
+                    await updateDoc(doc(getUserCollectionRef('customSections'), targetSection.id), { position: currentSection.position });
+                }
+                // Real-time listener will re-render everything
+            } catch (error) {
+                console.error(`Error moving section ${direction}:`, error);
+                alert('Failed to move section.');
+            }
+        }
+
+        // --- UI/RENDER FUNCTIONS ---
+
+        // Render products on homepage
+        function renderProducts() {
+            const grid = document.getElementById('productsGrid');
+            if (products.length === 0) {
+                grid.innerHTML = '<p id="loadingProducts" style="text-align: center; color: var(--color-text-secondary); grid-column: 1 / -1;">No products found. Add some in the Admin Panel!</p>';
+                return;
+            }
+            grid.innerHTML = products.map((product, index) => `
+                <div class="product-card" data-product-id="${product.id}">
+                    <div class="product-controls">
+                        <button class="product-control-btn" onclick="moveProductWrapper('${product.id}', 'up')" ${index === 0 ? 'disabled' : ''} title="Move Up">⬆</button>
+                        <button class="product-control-btn" onclick="moveProductWrapper('${product.id}', 'down')" ${index === products.length - 1 ? 'disabled' : ''} title="Move Down">⬇</button>
+                    </div>
+                    <div class="product-image">
+                        ${product.image ? `<img src="${product.image}" alt="${product.name}" onerror="this.onerror=null;this.src='https://placehold.co/200x200/555/FFF?text=No+Image';">` : `<div class="product-image-emoji">${product.emoji}</div>`}
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">${product.brand}</div>
+                        <h3 class="product-name">${product.name}</h3>
+                        ${product.article ? `<div class="product-article">Article: ${product.article}</div>` : ''}
+                        ${product.description ? `<div class="product-description">${product.description}</div>` : ''}
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        // Wrapper for product move (to handle module import scope)
+        window.moveProductWrapper = (id, direction) => moveProduct(id, direction);
+
+        // Render products in admin panel
+        function renderAdminProducts() {
+            const tbody = document.getElementById('adminProductsList');
+            if (products.length === 0) {
+                 tbody.innerHTML = '<tr><td colspan="5" style="text-align: center; color: var(--color-text-secondary); padding: 2rem;">No products found.</td></tr>';
+                 return;
+            }
+            tbody.innerHTML = products.map((product, index) => `
+                <tr>
+                    <td>
+                        <button class="btn btn-sm" onclick="moveProductWrapper('${product.id}', 'up')" ${index === 0 ? 'disabled' : ''} style="background: var(--color-primary); color: white; padding: 0.25rem 0.5rem; margin-right: 0.25rem;">⬆</button>
+                        <button class="btn btn-sm" onclick="moveProductWrapper('${product.id}', 'down')" ${index === products.length - 1 ? 'disabled' : ''} style="background: var(--color-primary); color: white; padding: 0.25rem 0.5rem; margin-right: 0.25rem;">⬇</button>
+                    </td>
+                    <td>${product.emoji} ${product.brand}</td>
+                    <td>${product.name}</td>
+                    <td>${product.stock}</td>
+                    <td class="action-btns">
+                        <button class="btn btn-primary btn-sm" onclick="editProductWrapper('${product.id}')">Edit</button>
+                        <button class="btn btn-danger btn-sm" onclick="deleteProductWrapper('${product.id}')">Delete</button>
+                    </td>
+                </tr>
+            `).join('');
+        }
+        
+        // Wrapper for product CRUD actions (to handle module import scope)
+        window.editProductWrapper = (id) => {
+            const product = products.find(p => p.id === id);
+            if (!product) return;
+
+            const newName = prompt('Enter new product name:', product.name);
+            if (newName !== null) updateProductField(id, 'name', newName.trim());
+
+            const newStock = prompt('Enter new stock quantity:', product.stock);
+            if (newStock !== null && !isNaN(newStock)) updateProductField(id, 'stock', parseInt(newStock));
+        };
+        window.deleteProductWrapper = (id) => deleteProduct(id);
+
+
+        // Render messages in admin panel
+        function renderMessages() {
+            const messagesList = document.getElementById('messagesList');
+            if (messages.length === 0) {
+                messagesList.innerHTML = '<p style="color: var(--color-text-secondary);">No messages yet.</p>';
+                return;
+            }
+
+            messagesList.innerHTML = messages.map(msg => `
+                <div style="background: var(--color-surface); padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem; border: 1px solid var(--color-border);">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 0.5rem;">
+                        <div>
+                            <strong style="font-size: 1.1rem;">${msg.name}</strong>
+                            <div style="color: var(--color-text-secondary); font-size: 0.875rem; margin-top: 0.25rem;">${msg.email}</div>
+                        </div>
+                        <div style="color: var(--color-text-secondary); font-size: 0.75rem;">${new Date(msg.timestamp.seconds * 1000).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}</div>
+                    </div>
+                    <div style="margin: 1rem 0; color: var(--color-text);">${msg.message}</div>
+                    <button class="btn btn-danger btn-sm" onclick="deleteMessageWrapper('${msg.id}')">Delete</button>
+                </div>
+            `).join('');
+        }
+        
+        window.deleteMessageWrapper = (id) => deleteMessage(id);
+
+        // Update contact links when settings change
+        function updateContactLinks() {
+            const phoneCard = document.querySelector('.contact-card[onclick*="tel"]');
+            const emailCard = document.querySelector('.contact-card[onclick*="mailto"]');
+            if (phoneCard) {
+                phoneCard.onclick = function() { window.location.href = 'tel:' + websiteContent.phoneText.replace(/\s/g, ''); };
+            }
+            if (emailCard) {
+                emailCard.onclick = function() { window.location.href = 'mailto:' + websiteContent.emailText; };
+            }
+        }
+
+        // Update page content with current settings
+        function updatePageContent() {
+            document.getElementById('heroTitle').textContent = websiteContent.heroTitle || defaultWebsiteContent.heroTitle;
+            document.getElementById('heroSubtitle').textContent = websiteContent.heroSubtitle || defaultWebsiteContent.heroSubtitle;
+            document.getElementById('badge1Text').textContent = websiteContent.badge1Text || defaultWebsiteContent.badge1Text;
+            document.getElementById('badge1Icon').textContent = websiteContent.badge1Icon || defaultWebsiteContent.badge1Icon;
+            document.getElementById('badge2Text').textContent = websiteContent.badge2Text || defaultWebsiteContent.badge2Text;
+            document.getElementById('badge2Icon').textContent = websiteContent.badge2Icon || defaultWebsiteContent.badge2Icon;
+            document.getElementById('badge3Text').textContent = websiteContent.badge3Text || defaultWebsiteContent.badge3Text;
+            document.getElementById('badge3Icon').textContent = websiteContent.badge3Icon || defaultWebsiteContent.badge3Icon;
+            document.getElementById('contactFormTitle').textContent = websiteContent.contactFormTitle || defaultWebsiteContent.contactFormTitle;
+            document.getElementById('contactFormSubtitle').textContent = websiteContent.contactFormSubtitle || defaultWebsiteContent.contactFormSubtitle;
+            document.getElementById('locationText').textContent = websiteContent.locationText || defaultWebsiteContent.locationText;
+            document.getElementById('phoneText').textContent = websiteContent.phoneText || defaultWebsiteContent.phoneText;
+            document.getElementById('emailText').textContent = websiteContent.emailText || defaultWebsiteContent.emailText;
+            document.getElementById('footerText1').innerHTML = websiteContent.footerText1 || defaultWebsiteContent.footerText1;
+            document.getElementById('footerText2').innerHTML = websiteContent.footerText2 || defaultWebsiteContent.footerText2;
+            document.getElementById('footerText3').innerHTML = websiteContent.footerText3 || defaultWebsiteContent.footerText3;
+            
+            // Also update form fields in admin panel if it's visible
+            loadWebsiteSettings();
+        }
+
+        // Load website settings into form
+        function loadWebsiteSettings() {
+            document.getElementById('siteTitle').value = websiteContent.heroTitle || '';
+            document.getElementById('siteSubtitle').value = websiteContent.heroSubtitle || '';
+            document.getElementById('badge1').value = websiteContent.badge1Text || '';
+            document.getElementById('badge1Icon').value = websiteContent.badge1Icon || '';
+            document.getElementById('badge2').value = websiteContent.badge2Text || '';
+            document.getElementById('badge2Icon').value = websiteContent.badge2Icon || '';
+            document.getElementById('badge3').value = websiteContent.badge3Text || '';
+            document.getElementById('badge3Icon').value = websiteContent.badge3Icon || '';
+            document.getElementById('contactFormTitle').value = websiteContent.contactFormTitle || '';
+            document.getElementById('contactFormSubtitle').value = websiteContent.contactFormSubtitle || '';
+            document.getElementById('locationText').value = websiteContent.locationText || '';
+            document.getElementById('phoneText').value = websiteContent.phoneText || '';
+            document.getElementById('emailText').value = websiteContent.emailText || '';
+            document.getElementById('footerText1').value = websiteContent.footerText1 || '';
+            document.getElementById('footerText2').value = websiteContent.footerText2 || '';
+            document.getElementById('footerText3').value = websiteContent.footerText3 || '';
+        }
+
+        // Reset website settings form to current values
+        window.resetWebsiteSettings = () => {
+            loadWebsiteSettings();
+            alert('Form reset to current website values.');
+        }
+
+        // Render custom sections
+        function renderSections() {
+            const container = document.querySelector('.container');
+            let sectionsContainer = document.getElementById('customSectionsContainer');
+            
+            // Remove existing container if present
+            if (sectionsContainer) sectionsContainer.remove();
+            
+            // Only proceed if there are custom sections
+            if (customSections.length === 0) return;
+            
+            const sectionsHTML = customSections.map(section => {
+                const content = section.content || {};
+                const baseStyle = 'padding: 2rem; margin: 2rem 0; border-radius: 12px;';
+                
+                if (section.type === 'hero') {
+                    return `<div class="hero" style="${baseStyle} background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #f97316 100%); color: white;"><h1>${content.title || 'New Hero Title'}</h1><p>${content.subtitle || 'New Hero Subtitle'}</p></div>`;
+                } else if (section.type === 'card') {
+                    return `<div class="contact-card" style="${baseStyle} text-align: left; background: white; border: 1px solid var(--color-primary);"><h3>${content.title || 'New Card Title'}</h3><p>${content.text || 'Card body content.'}</p></div>`;
+                } else if (section.type === 'text') {
+                    return `<div style="${baseStyle} background: #f0f4f8; border: 1px solid #dbe2e9;"><p style="white-space: pre-wrap;">${content.text || 'New Text Block'}</p></div>`;
+                } else if (section.type === 'image') {
+                    return `<div style="margin: 2rem 0; text-align: center;"><img src="${content.url || 'https://placehold.co/400x200/555/FFF?text=Image+Placeholder'}" style="max-width: 100%; border-radius: 12px; object-fit: cover; height: 250px;"><p style="margin-top: 0.5rem; color: var(--color-text-secondary);">${content.caption || 'Image Caption'}</p></div>`;
+                } else if (section.type === 'gallery') {
+                    const images = content.images || [];
+                    return `<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; padding: 1rem; background: #e0f2fe; border-radius: 12px;">${images.map(img => `<img src="${img}" style="width: 100%; border-radius: 8px; height: 150px; object-fit: cover;">`).join('')}</div>`;
+                } else if (section.type === 'spacer') {
+                    return `<div style="height: ${content.height || '50px'}; background: transparent; border: none;"></div>`;
+                }
+                return '';
+            }).join('');
+            
+            sectionsContainer = document.createElement('div');
+            sectionsContainer.id = 'customSectionsContainer';
+            sectionsContainer.innerHTML = sectionsHTML;
+            // Insert before the Product section (which has id="products")
+            const productsSection = document.getElementById('products');
+            document.querySelector('.container').insertBefore(sectionsContainer, productsSection);
+        }
+
+        function renderSectionsList() {
+            const list = document.getElementById('sectionsList');
+            if (customSections.length === 0) {
+                list.innerHTML = '<p style="color: var(--color-text-secondary);">No sections added yet.</p>';
+                return;
+            }
+            
+            list.innerHTML = customSections.map((section, index) => {
+                const content = section.content || {};
+                let summary;
+                switch(section.type) {
+                    case 'hero': summary = content.title; break;
+                    case 'card': summary = content.title; break;
+                    case 'text': summary = content.text ? content.text.substring(0, 50) + '...' : 'Text Block'; break;
+                    case 'image': summary = 'Image: ' + (content.caption || 'No Caption'); break;
+                    case 'gallery': summary = content.images ? content.images.length + ' images' : 'Empty Gallery'; break;
+                    case 'spacer': summary = 'Height: ' + (content.height || '50px'); break;
+                    default: summary = 'Unknown Content';
+                }
+                
+                return `
+                <div style="background: white; padding: 1rem; border-radius: 8px; border: 1px solid var(--color-border); margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <strong>${section.type.charAt(0).toUpperCase() + section.type.slice(1)}</strong>
+                        <div style="color: var(--color-text-secondary); font-size: 0.875rem; margin-top: 0.25rem;">
+                            ${summary}
+                        </div>
+                    </div>
+                    <div class="action-btns">
+                        <button class="btn btn-sm" onclick="moveSectionWrapper('${section.id}', 'up')" ${index === 0 ? 'disabled' : ''} style="background: var(--color-primary); color: white;">⬆</button>
+                        <button class="btn btn-sm" onclick="moveSectionWrapper('${section.id}', 'down')" ${index === customSections.length - 1 ? 'disabled' : ''} style="background: var(--color-primary); color: white;">⬇</button>
+                        <button class="btn btn-primary btn-sm" onclick="editSectionWrapper('${section.id}')">Edit</button>
+                        <button class="btn btn-danger btn-sm" onclick="deleteSectionWrapper('${section.id}')">Delete</button>
+                    </div>
+                </div>
+            `;
+            }).join('');
+        }
+        
+        // Wrappers for section CRUD actions (to handle module import scope)
+        window.addSection = (type) => addSection(type);
+        window.editSectionWrapper = (id) => editSection(id);
+        window.deleteSectionWrapper = (id) => deleteSection(id);
+        window.moveSectionWrapper = (id, direction) => moveSection(id, direction);
+
+        // --- ADMIN UI LOGIC ---
+
+        function openAdminPanel() {
+            // Force the modal to display (removes the initial display: none from CSS)
+            const modal = document.getElementById('adminModal');
+            modal.style.display = 'flex'; 
+            modal.classList.add('active'); 
+
+            // Check if authentication is ready before showing the dashboard
+            if (!isAuthReady) {
+                document.getElementById('modalTitle').textContent = 'Authenticating...';
+                document.getElementById('dashboardSection').style.display = 'block';
+                return;
+            }
+
+            // Authentication is ready, proceed to show dashboard
+            showDashboard();
+        }
+
+        function closeAdminPanel() {
+            document.getElementById('adminModal').classList.remove('active');
+             // Add a small delay to completely hide the modal element after the transition/fadeout
+            setTimeout(() => {
+                document.getElementById('adminModal').style.display = 'none';
+            }, 300);
+        }
+
+        function showDashboard() {
+            document.getElementById('modalTitle').textContent = 'Admin Dashboard';
+            document.getElementById('loginSection').style.display = 'none';
+            document.getElementById('dashboardSection').style.display = 'block';
+            // Start on analytics tab by default
+            switchTab('analytics'); 
+        }
+
+        function switchTab(tabName) {
+            // Update tab buttons
+            document.querySelectorAll('.admin-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            const targetButton = document.querySelector(`.admin-tab[onclick*="'${tabName}'"]`);
+            if (targetButton) {
+                targetButton.classList.add('active');
+            }
+
+            // Update tab content
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(tabName + 'Tab').classList.add('active');
+
+            // If analytics tab, refresh data
+            if (tabName === 'analytics') {
+                renderAnalytics();
+            }
+        }
+        
+        // --- OTHER LOCAL STATE/ANALYTICS (Keep using localStorage for simple, client-side tracking) ---
+        
+        let analytics = {
+            totalVisitors: 0,
+            totalViews: 0,
+            todayVisitors: 0,
+            todayDate: '',
+            devices: { desktop: 0, mobile: 0, tablet: 0 },
+            activities: []
+        };
+        
+        // Handle brand selection for custom brand
+        function handleBrandSelect() {
+            const brandSelect = document.getElementById('productBrand');
+            const customGroup = document.getElementById('customBrandGroup');
+            
+            if (brandSelect.value === '__custom__') {
+                customGroup.style.display = 'block';
+                document.getElementById('customBrandInput').required = true;
+            } else {
+                customGroup.style.display = 'none';
+                document.getElementById('customBrandInput').required = false;
+                document.getElementById('customBrandInput').value = '';
+            }
+        }
+        window.handleBrandSelect = handleBrandSelect; // Expose to global scope
+        
+        // AI Assistant functions
+        function toggleAssistant() {
+            assistantSettings.enabled = document.getElementById('assistantEnabled').checked;
+            updateAssistantVisibility();
+            saveAssistantSettings();
+        }
+
+        function updateAssistantVisibility() {
+            const button = document.getElementById('aiChatButton');
+            const widget = document.getElementById('aiChatWidget');
+            if (assistantSettings.enabled) {
+                button.style.display = 'flex';
+            } else {
+                button.style.display = 'none';
+                widget.style.display = 'none';
+            }
+        }
+
+        function saveAssistantSettings() {
+            assistantSettings.greeting = document.getElementById('assistantGreeting').value;
+            assistantSettings.title = document.getElementById('assistantTitle').value;
+            assistantSettings.subtitle = document.getElementById('assistantSubtitle').value;
+            
+            localStorage.setItem('assistantSettings', JSON.stringify(assistantSettings));
+            updateAssistantUI();
+            alert('AI Assistant settings saved successfully!');
+        }
+
+        function resetAssistantSettings() {
+            const defaultGreeting = '👋 Hi! I\'m your Harish Footwear assistant. I can help you with:\n\n• Product information\n• Contact details\n• Bulk order inquiries\n• Location and hours\n\nHow can I assist you today?';
+            
+            document.getElementById('assistantGreeting').value = defaultGreeting;
+            document.getElementById('assistantTitle').value = 'Harish Assistant 🤖';
+            document.getElementById('assistantSubtitle').value = 'Ask me anything!';
+            document.getElementById('assistantEnabled').checked = true;
+            
+            assistantSettings = {
+                enabled: true,
+                greeting: defaultGreeting,
+                title: 'Harish Assistant 🤖',
+                subtitle: 'Ask me anything!'
+            };
+            
+            saveAssistantSettings();
+        }
+
+        function loadAssistantSettings() {
+            const saved = localStorage.getItem('assistantSettings');
+            if (saved) {
+                try {
+                    assistantSettings = { ...assistantSettings, ...JSON.parse(saved) };
+                    document.getElementById('assistantGreeting').value = assistantSettings.greeting;
+                    document.getElementById('assistantTitle').value = assistantSettings.title;
+                    document.getElementById('assistantSubtitle').value = assistantSettings.subtitle;
+                    document.getElementById('assistantEnabled').checked = assistantSettings.enabled;
+                } catch (e) {
+                    console.error('Error loading assistant settings:', e);
+                }
+            }
+            updateAssistantUI();
+            updateAssistantVisibility();
+        }
+
+        function updateAssistantUI() {
+            // Update header
+            const headerDiv = document.querySelector('#aiChatWidget > div:first-child > div:first-child');
+            if (headerDiv) {
+                headerDiv.innerHTML = `
+                    <div style="font-weight: 600; font-size: 1.1rem;">${assistantSettings.title}</div>
+                    <div style="font-size: 0.75rem; opacity: 0.9;">${assistantSettings.subtitle}</div>
+                `;
+            }
+            
+            // Update greeting message
+            const messagesDiv = document.getElementById('aiChatMessages');
+            const greetingDiv = messagesDiv.querySelector('div:first-child');
+            if (greetingDiv) {
+                greetingDiv.innerHTML = assistantSettings.greeting.replace(/\n/g, '<br>');
+            }
+        }
+        window.toggleAssistant = toggleAssistant;
+        window.saveAssistantSettings = saveAssistantSettings;
+        window.resetAssistantSettings = resetAssistantSettings;
+
+        // Analytics functions (kept as is, using localStorage)
+        function trackVisitor() {
+            const today = new Date().toLocaleDateString('en-IN');
+            const sessionId = sessionStorage.getItem('visitorSessionId') || generateSessionId();
+            sessionStorage.setItem('visitorSessionId', sessionId);
+
+            loadAnalytics();
+
+            const visitorId = localStorage.getItem('visitorId');
+            if (!visitorId) {
+                const newVisitorId = 'visitor_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+                localStorage.setItem('visitorId', newVisitorId);
+                analytics.totalVisitors++;
+            }
+
+            analytics.totalViews++;
+
+            if (analytics.todayDate !== today) {
+                analytics.todayDate = today;
+                analytics.todayVisitors = 1;
+                sessionStorage.removeItem('todayVisitorCounted');
+                sessionStorage.setItem('todayVisitorCounted', 'true');
+            } else {
+                const todaySession = sessionStorage.getItem('todayVisitorCounted');
+                if (!todaySession) {
+                    analytics.todayVisitors++;
+                    sessionStorage.setItem('todayVisitorCounted', 'true');
+                }
+            }
+
+            const deviceType = getDeviceType();
+            analytics.devices[deviceType]++;
+
+            const activityDetail = visitorId ? `Returning visitor from ${deviceType}` : `New visitor from ${deviceType}`;
+            logActivity('Page View', activityDetail);
+
+            saveAnalytics();
+        }
+
+        function generateSessionId() {
+            return 'session_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+        }
+
+        function getDeviceType() {
+            const ua = navigator.userAgent;
+            if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+                return 'tablet';
+            }
+            if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
+                return 'mobile';
+            }
+            return 'desktop';
+        }
+
+        function logActivity(type, details) {
+            const activity = {
+                timestamp: new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }),
+                type: type,
+                details: details
+            };
+            analytics.activities.unshift(activity);
+            if (analytics.activities.length > 50) {
+                analytics.activities = analytics.activities.slice(0, 50);
+            }
+        }
+
+        function saveAnalytics() {
+            localStorage.setItem('siteAnalytics', JSON.stringify(analytics));
+        }
+
+        function loadAnalytics() {
+            const saved = localStorage.getItem('siteAnalytics');
+            if (saved) {
+                try {
+                    const parsed = JSON.parse(saved);
+                    analytics = { ...analytics, ...parsed };
+                } catch (e) {
+                    console.error('Error loading analytics:', e);
+                }
+            }
+        }
+
+        function renderAnalytics() {
+            document.getElementById('totalVisitors').textContent = analytics.totalVisitors;
+            document.getElementById('todayVisitors').textContent = analytics.todayVisitors;
+            document.getElementById('totalViews').textContent = analytics.totalViews;
+            document.getElementById('todayDate').textContent = analytics.todayDate || new Date().toLocaleDateString('en-IN', { month: 'short', day: '2-digit' });
+            
+            const avgMinutes = Math.floor(analytics.totalViews * 2.5 / 60);
+            const avgSeconds = Math.floor((analytics.totalViews * 2.5) % 60);
+            document.getElementById('avgTime').textContent = `${avgMinutes}:${avgSeconds.toString().padStart(2, '0')}`;
+
+            const total = analytics.devices.desktop + analytics.devices.mobile + analytics.devices.tablet;
+            const desktopPercent = total > 0 ? Math.round((analytics.devices.desktop / total) * 100) : 0;
+            const mobilePercent = total > 0 ? Math.round((analytics.devices.mobile / total) * 100) : 0;
+            const tabletPercent = total > 0 ? Math.round((analytics.devices.tablet / total) * 100) : 0;
+
+            document.getElementById('desktopCount').textContent = `${analytics.devices.desktop} (${desktopPercent}%)`;
+            document.getElementById('mobileCount').textContent = `${analytics.devices.mobile} (${mobilePercent}%)`;
+            document.getElementById('tabletCount').textContent = `${analytics.devices.tablet} (${tabletPercent}%)`;
+
+            const activityLog = document.getElementById('activityLog');
+            if (analytics.activities.length === 0) {
+                activityLog.innerHTML = '<tr><td colspan="3" style="text-align: center; color: var(--color-text-secondary); padding: 2rem;">No activity yet</td></tr>';
+            } else {
+                activityLog.innerHTML = analytics.activities.slice(0, 10).map(activity => `
+                    <tr>
+                        <td>${activity.timestamp}</td>
+                        <td><span style="background: var(--color-primary); color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.75rem;">${activity.type}</span></td>
+                        <td>${activity.details}</td>
+                    </tr>
+                `).join('');
+            }
+        }
+        
+        // --- ADMIN ACCESS CHECK ---
+        function checkAdminAccess() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const adminBadge = document.getElementById('adminBadge');
+            
+            // Check for "?admin=true" in the URL
+            if (urlParams.get('admin') === 'true') {
+                adminBadge.style.display = 'flex'; // Show the badge
+            } else {
+                adminBadge.style.display = 'none'; // Ensure the badge is hidden
+            }
+        }
+        window.checkAdminAccess = checkAdminAccess; // Expose globally for event listeners if needed, though run on DOMContentLoaded
+
+        // --- AI CHAT LOGIC FIX ---
+        // Changed the submit button style to match the form styling
+        function handleAiChat(e) {
+            e.preventDefault();
+            const input = document.getElementById('aiChatInput');
+            const question = input.value.trim().toLowerCase();
+            const messagesDiv = document.getElementById('aiChatMessages');
+            
+            if (!question) return;
+
+            // Add user message
+            const userMsg = document.createElement('div');
+            userMsg.style.cssText = 'background: #3b82f6; color: white; padding: 0.75rem; border-radius: 12px; margin-bottom: 0.75rem; margin-left: 2rem; font-size: 0.875rem; text-align: right; word-wrap: break-word;';
+            userMsg.textContent = input.value;
+            messagesDiv.appendChild(userMsg);
+
+            // Clear input immediately
+            input.value = '';
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+
+            // --- SAFETY CHECK FOR AI DATA ---
+            if (!isAuthReady || Object.keys(websiteContent).length === 0) {
+                const aiMsg = document.createElement('div');
+                aiMsg.style.cssText = 'background: linear-gradient(135deg, #fef3c7, #fde68a); padding: 0.75rem; border-radius: 12px; margin-bottom: 0.75rem; margin-right: 2rem; font-size: 0.875rem; word-wrap: break-word;';
+                aiMsg.innerHTML = '⚠️ System data (products/contact info) is still loading from the database. Please try again in a few moments, or ask a general greeting!';
+                
+                messagesDiv.appendChild(aiMsg);
+                messagesDiv.scrollTop = messagesDiv.scrollHeight;
+                return; 
+            }
+            // --- END SAFETY CHECK ---
+
+
+            // Generate AI response
+            let response = '';
+            
+            // Search through Firestore products data for relevant items
+            const matchingProducts = products.filter(p => 
+                p.name.toLowerCase().includes(question) || 
+                p.brand.toLowerCase().includes(question) ||
+                p.description.toLowerCase().includes(question)
+            );
+
+            if (matchingProducts.length > 0) {
+                response = `🔍 I found ${matchingProducts.length} product(s) related to your query: <ul>`;
+                matchingProducts.slice(0, 3).forEach(p => {
+                    response += `<li><strong>${p.brand} ${p.name}</strong> (${p.emoji}) - Stock: ${p.stock}</li>`;
+                });
+                if (matchingProducts.length > 3) {
+                     response += `<li>...and more! Check the full collection.</li>`;
+                }
+                response += '</ul>';
+            } else if (question.includes('contact') || question.includes('phone') || question.includes('call') || question.includes('number')) {
+                response = `📞 You can reach us at:<br><strong>${websiteContent.phoneText}</strong><br><br>📧 Email: ${websiteContent.emailText}<br><br>We're happy to help!`;
+            } else if (question.includes('location') || question.includes('address') || question.includes('where')) {
+                response = `📍 We're located at:<br><strong>${websiteContent.locationText}</strong><br><br>Visit us for wholesale deals!`;
+            } else if (question.includes('price') || question.includes('cost') || question.includes('wholesale') || question.includes('bulk')) {
+                response = '💰 We specialize in wholesale!<br><br>Contact us for custom quotes and volume discounts:<br>📞 Call: ' + websiteContent.phoneText;
+            } else if (question.includes('hello') || question.includes('hi') || question.includes('hey')) {
+                response = '👋 Hello! Welcome to Harish Footwear! How can I help you today?';
+            } else {
+                response = '🤔 I\'m here to help! Try searching for a specific shoe brand or asking about "contact," "location," or "bulk orders."';
+            }
+
+            // Add AI response
+            setTimeout(() => {
+                const aiMsg = document.createElement('div');
+                aiMsg.style.cssText = 'background: linear-gradient(135deg, #e0f2fe, #dbeafe); padding: 0.75rem; border-radius: 12px; margin-bottom: 0.75rem; margin-right: 2rem; font-size: 0.875rem; word-wrap: break-word;';
+                aiMsg.innerHTML = response;
+                messagesDiv.appendChild(aiMsg);
+                messagesDiv.scrollTop = messagesDiv.scrollHeight;
+            }, 500);
+        }
+        window.handleAiChat = handleAiChat;
+        
+        // --- INITIALIZATION ---
+        
+        // Expose necessary functions globally for HTML event handlers
+        window.handleContactSubmit = handleContactSubmit;
+        window.handleAddProduct = handleAddProduct;
+        window.openAdminPanel = openAdminPanel;
+        window.closeAdminPanel = closeAdminPanel;
+        window.switchTab = switchTab;
+        window.handleWebsiteSettings = handleWebsiteSettings;
+        window.quickEditField = quickEditField;
+        window.toggleAiChat = toggleAiChat;
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initFirebase();
+            loadAssistantSettings();
+            
+            // Only check for admin access after Firebase init is started. 
+            checkAdminAccess(); 
+            
+            // Track visitor after a short delay to ensure everything is loaded
+            setTimeout(() => {
+                trackVisitor();
+            }, 500);
+            
+            // Initial render state
+            renderProducts();
+            renderSections();
+        });
+
+    </script>
+</body>
+</html>
